@@ -68,5 +68,11 @@
 - Typescript: lenguaje de programacion derivado de js con tipado fuerte.
 - webpack: es un empaquetador de modulos.
 
+## Variables de entorno
+
+    PORT = 8000
+
+- PORT: variable de entorno creada para usarla en nuestro puerto local.
+
 
 ### End
