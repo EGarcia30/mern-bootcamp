@@ -14,10 +14,25 @@ app.get('/', (req: Request, res: Response) => {
     res.send('Welcome to API Restful: Express + TS + Swagger + Mongoose')
 });
 
-// Define the first route of APP
-app.get('/hello', (req: Request, res: Response) => {
-    // Send hello world
-    res.send('Hello world') 
+// Define the second route of APP
+app.get('/hello/:name', (req: Request, res: Response) => {
+    let userName: string = req.params.name;
+    const messageExtra = {
+        data:{
+            message: `hola, ${userName}`
+        }
+    }
+    res.json(messageExtra).status(200);
+});
+
+// Define the third route of APP
+app.get('/json', (req: Request, res: Response) => {
+    const messageJson = {
+        data:{
+            message: "Goodbye, world"
+        }
+    };
+    res.status(200).json(messageJson);
 });
 
 // Execute APP and Listen Requests port
