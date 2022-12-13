@@ -19,7 +19,7 @@
 - dev: ejecuta 2 comandos el estado del compilador gracias a `--watch` y nos ejecuta el codigo js transpilado.
 - serve:coverage : ejecuta el script test para pruebas entra a las carpetas de reporte y levanta un servidor.
 
-##Dependencias
+## Dependencias
 
 
     "dependencies": {
@@ -27,11 +27,11 @@
         "express": "^4.18.2"
       }
 
-##Explicación
+## Explicación
 - dotenv: modulo que carga variables de entorno desde el archivo .env.
 - express: es un framework o entorno de trabajo para aplicaciones web creadas en node.
 
-##DevDependencias
+## DevDependencias
 
 
     "devDependencies": {
@@ -69,4 +69,4 @@
 - webpack: es un empaquetador de modulos.
 
 
-###End
+### End
