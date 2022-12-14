@@ -4,7 +4,7 @@
  */
 import express, { Request, Response } from "express";
 import helloRouter from "./HelloRouter";
-import { LogInfo } from "@/utils/logger";
+import { LogInfo } from "../utils/logger";
 
 //Server instance
 let server = express();
@@ -26,4 +26,6 @@ server.use('/', rootRouter);
 server.use('/hello', helloRouter);
 //add more routes to the APP
 
+
+// TODO: on server's file this variable is rootRouter.
 export default server;
