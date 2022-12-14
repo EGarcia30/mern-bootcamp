@@ -23,13 +23,19 @@
 
 
     "dependencies": {
+        "cors": "^2.8.5",
         "dotenv": "^16.0.3",
         "express": "^4.18.2"
+        "helmet": "^6.0.1"
       }
 
 ## Explicación
 - dotenv: modulo que carga variables de entorno desde el archivo .env.
 - express: es un framework o entorno de trabajo para aplicaciones web creadas en node.
+
+## NEW
+- cors: nos ayuda a que otras aplicaciones se puedan conectar con nuestro backend y personalizar cuales queremos que se conecten y cuales no.
+- helmet: seguridad de nuestra app. 
 
 ## DevDependencias
 
