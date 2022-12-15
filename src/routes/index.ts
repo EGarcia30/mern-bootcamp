@@ -4,6 +4,7 @@
  */
 import express, { Request, Response } from "express";
 import helloRouter from "./HelloRouter";
+import goodRouter from "./GoodByeRouter";
 import { LogInfo } from "../utils/logger";
 
 //Server instance
@@ -24,6 +25,7 @@ rootRouter.get('/', (req: Request, res: Response) => {
 //Redirections to Roouters $ Controllers
 server.use('/', rootRouter);
 server.use('/hello', helloRouter);
+server.use('/goodBye', goodRouter);
 //add more routes to the APP
 
 

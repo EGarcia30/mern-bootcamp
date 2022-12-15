@@ -6,6 +6,14 @@ export type BasicResponse ={
 }
 
 /**
+ * Goodbye JSON response for controllers
+ */
+export type GoodbyeResponse = {
+    message: string,
+    date: Date
+}
+
+/**
  * Error JSON Response for Controllers
  */
 export type ErrorResponse = {
